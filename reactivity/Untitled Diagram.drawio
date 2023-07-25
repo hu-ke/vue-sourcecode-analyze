@@ -1,0 +1,250 @@
+<mxfile host="app.diagrams.net" modified="2023-07-25T09:15:43.190Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="BBYZ3keLRHqy9aT7llb1" version="20.8.16" type="github">
+  <diagram name="Page-1" id="0Q7t6ijoDG1jxrJWOxci">
+    <mxGraphModel dx="2309" dy="1672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-5" value="effect.js" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="18.42" width="87" height="31.58" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-70" y="-160" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-15">
+          <mxGeometry y="30" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-13" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-15">
+          <mxGeometry width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-14" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-13">
+          <mxGeometry width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-2" value="&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;div&gt;// 新建一个set集合用来保存effects对象&lt;/div&gt;export const createDep = (effects) =&amp;gt; {&lt;div&gt;&amp;nbsp; &amp;nbsp; const dep = new Set(effects)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return dep&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-14">
+          <mxGeometry y="30" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-3" value="dep.js" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-14">
+          <mxGeometry width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-59" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-410" y="-130" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-34" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-59">
+          <mxGeometry width="220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-35" value="import { ref } from &#39;./ref.js&#39;&amp;nbsp;&lt;br&gt;import { effect } from &#39;./effect.js&#39;&lt;br&gt;const a = ref(1)&lt;br&gt;let dummy&lt;br&gt;let calls = 0&lt;br&gt;effect(() =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;calls++&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;dummy = a.value&lt;br&gt;})&lt;br&gt;console.log(calls, dummy) // 1 1&lt;br&gt;a.value = 2&lt;br&gt;console.log(calls, dummy) // 2 2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;horizontal=1;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-59">
+          <mxGeometry x="10" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.562;entryY=-0.097;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-60" target="T-G6s2uSpHPfjvhsTkFT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="-370.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-60" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="-510" width="740" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-61" value="ref.js" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="-550" width="87" height="45.78947368421053" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-62" value="RefImpl类" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="-497.10999999999996" width="280" height="234.21" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-63" value="&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;class RefImpl {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; constructor(value) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this._value = toReactive(value)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;this.dep = null&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; get value() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;trackRefValue(this)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;return this._value&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; set value(newVal) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;this._value = newVal&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;triggerRefValue(this, newVal)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-62">
+          <mxGeometry x="10" y="17.11" width="250" height="208.95" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-67" value="export const ref = (rawValue) =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;return new RefImpl(rawValue)&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-490" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-69" value="export function trackRefValue = (ref) =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;trackEffects(ref.dep || (ref.dep = createDep()))&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-410" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-70" value="export function triggerRefValue = (ref) =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const dep = ref.dep&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if (dep) {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;triggerEffects(dep)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;}&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-340" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-71" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="210" y="-480" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-65" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-71" source="T-G6s2uSpHPfjvhsTkFT-66">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="29.370000000000005" as="sourcePoint" />
+            <mxPoint y="29.37000000000012" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-66" value="实例化一份" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-71">
+          <mxGeometry x="10" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-78" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="790" y="-520" width="300" height="195.79" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-75" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-78">
+          <mxGeometry y="45.78999999999999" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-76" value="toReactive.js" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontStyle=1;container=0;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-78">
+          <mxGeometry y="15.79" width="87" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-77" value="export const toReactive = (value) =&amp;gt; {&lt;br&gt;&amp;nbsp; &amp;nbsp; if (typeof value !== &#39;object&#39;) {&lt;br&gt;&amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;return value&lt;br&gt;&amp;nbsp; &amp;nbsp; }&lt;br&gt;&amp;nbsp; &amp;nbsp; const target = value&lt;br&gt;&amp;nbsp; &amp;nbsp; const proxy = new Proxy(target, baseHandler)&lt;br&gt;&amp;nbsp; &amp;nbsp; return proxy&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-78">
+          <mxGeometry x="10" y="55.78999999999999" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-35" target="T-G6s2uSpHPfjvhsTkFT-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.576;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-35" target="T-G6s2uSpHPfjvhsTkFT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-118" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="790" y="-190" width="390" height="244.20999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-109" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-118">
+          <mxGeometry y="34.20999999999998" width="390" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-114" value="baseHandlers.js" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-118">
+          <mxGeometry width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-115" value="export&amp;nbsp; const baseHandlers = {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;set: (target, key, value, receiver) =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const result = Reflect.set(target, key, value, receiver)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;let oldValue = target[key]&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;trigger(target, null, key, value, oldValue)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;return result&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;},&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;get: (target, key, receiver) =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const res = Reflect.get(target, key, receiver)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;track(target, null, key)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;return res&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;}&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-118">
+          <mxGeometry x="10" y="44.20999999999998" width="350" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.999;entryY=0.635;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-109" target="T-G6s2uSpHPfjvhsTkFT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="935" y="-160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-156" value="" style="group;rotation=90;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-80" y="18.42" width="740" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-4" value="" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-156">
+          <mxGeometry width="740" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-155" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-156">
+          <mxGeometry x="10" y="20" width="700" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-36" value="ReactiveEffect类" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-155">
+          <mxGeometry x="440" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-6" value="&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;export class ReactiveEffect {&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; constructor(fn) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this.fn = fn&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; run() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; activeEffect = this&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this.fn()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;container=0;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-36">
+          <mxGeometry x="10" y="21.05" width="180" height="148.95" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-121" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-155">
+          <mxGeometry width="330" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-16" value="&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;// targetMap用于保存响应式对象，以target为map的key&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;const targetMap = new WeakMap()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;// 在get时被调用，将当前活跃的effect对象存入dep(set集合)中&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;export function track(target, type, key) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;// map没有就新建&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;let depsMap = targetMap.get(target)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if (!depsMap) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;        &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;targetMap.set(target, (depsMap = new Map()))&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;// dep没有就新建&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;let dep = depsMap.get(key)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if (!dep) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;        &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;depsMap.set(key, (dep = createDep()))&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;trackEffects(dep)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;export function trigger(target,type,key,newValue, oldValue) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const depsMap = targetMap.get(target)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; let deps = []&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;deps.push(depsMap.get(key))&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const effects = []&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;for (const dep of deps) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;effects.push(...dep)&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;}&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;triggerEffects(createDep(effects))&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;export function trackEffects(dep) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;dep.add(activeEffect)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;// activeEffect.deps.push(dep)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;export function triggerEffects(dep) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const effects = dep&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;for (const effect of effects) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;        &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;triggerEffect(effect)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;export function triggerEffect(effect) {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;    &lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;effect.run()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-121">
+          <mxGeometry y="120" width="320" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-50" value="export function effect(fn) {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;const _effect = new ReactiveEffect(fn)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;_effect.run()&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-121">
+          <mxGeometry y="40" width="293.8181818181818" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-58" value="export let activeEffect = null" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-121">
+          <mxGeometry width="184.24242424242425" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-147" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-155">
+          <mxGeometry x="360" y="210" width="340" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-154" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-147">
+          <mxGeometry width="340" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-49" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-154">
+          <mxGeometry width="340" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-18" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-49">
+          <mxGeometry width="340" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-37" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-49">
+          <mxGeometry x="20" width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-19" value="// targetMap用于保存响应式对象，以target为map的key&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;const targetMap = new WeakMap()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-37">
+          <mxGeometry y="20" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-24" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-37">
+          <mxGeometry x="10" y="100" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-20" value="target" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-24">
+          <mxGeometry y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-21" value="new Set(effects)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-24">
+          <mxGeometry x="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-23" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="34.33000000000004" as="sourcePoint" />
+            <mxPoint x="130" y="34.33000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-92" value="dep" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-24">
+          <mxGeometry x="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-29" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-37">
+          <mxGeometry x="10" y="190" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-161" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-29">
+          <mxGeometry width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-30" value="target1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
+          <mxGeometry y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-31" value="new Set(effects)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
+          <mxGeometry x="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-32" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="34.33000000000004" as="sourcePoint" />
+            <mxPoint x="130" y="34.33000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-108" value="dep" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
+          <mxGeometry x="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-33" value="targetMap(WeakMap类型)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-154">
+          <mxGeometry x="110" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-151" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-155">
+          <mxGeometry x="300" y="60" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-152" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-151" source="T-G6s2uSpHPfjvhsTkFT-153">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="29.370000000000005" as="sourcePoint" />
+            <mxPoint y="29.37000000000012" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-153" value="实例化一份" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-151">
+          <mxGeometry x="10" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-162" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-156">
+          <mxGeometry x="400" y="571.58" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-163" value="target3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-164" value="new Set(effects)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry x="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-165" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="34.33000000000004" as="sourcePoint" />
+            <mxPoint x="130" y="34.33000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-166" value="dep" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry x="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-167" value="不属于特定targetMap的dep" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry x="-20" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-4" target="T-G6s2uSpHPfjvhsTkFT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-168" value="&lt;b&gt;effect.js&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="-11.580000000000013" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
