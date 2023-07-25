@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+    import { ref } from './ref.js'
+    import { effect } from './effect.js'
+    const a = ref(1)
+    let dummy
+    let calls = 0
+    effect(() => {
+      calls++
+      dummy = a.value
+    })
+    console.log(calls, dummy)
+    a.value = 2
+    console.log(calls, dummy)
+// it('should be reactive', () => {
+//     const a = ref(1)
+//     let dummy
+//     let calls = 0
+//     effect(() => {
+//       calls++
+//       dummy = a.value
+//     })
+//     expect(calls).toBe(1)
+//     expect(dummy).toBe(1)
+//     a.value = 2
+//     expect(calls).toBe(2)
+//     expect(dummy).toBe(2)
+//     // same value should not trigger
+//     a.value = 2
+//     expect(calls).toBe(2)
+// })
+
+
+    </script>
+</body>
+</html>
