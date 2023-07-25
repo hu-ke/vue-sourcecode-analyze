@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-25T07:59:47.454Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="OIWyW1v4Qg53n8MIo4L_" version="20.8.16" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-25T08:03:59.709Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="AeyNIUWVcrdMa2mPUA0Z" version="20.8.16" type="github">
   <diagram name="Page-1" id="0Q7t6ijoDG1jxrJWOxci">
     <mxGraphModel dx="2309" dy="1672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -184,19 +184,22 @@
         <mxCell id="T-G6s2uSpHPfjvhsTkFT-29" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-37">
           <mxGeometry x="10" y="190" width="240" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="T-G6s2uSpHPfjvhsTkFT-30" value="target1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-29">
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-161" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-29">
+          <mxGeometry width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-30" value="target1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
           <mxGeometry y="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="T-G6s2uSpHPfjvhsTkFT-31" value="new Set(effects)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-29">
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-31" value="new Set(effects)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
           <mxGeometry x="140" width="100" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="T-G6s2uSpHPfjvhsTkFT-32" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-29">
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-32" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="60" y="34.33000000000004" as="sourcePoint" />
             <mxPoint x="130" y="34.33000000000004" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="T-G6s2uSpHPfjvhsTkFT-108" value="dep" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-29">
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-108" value="dep" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-161">
           <mxGeometry x="160" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="T-G6s2uSpHPfjvhsTkFT-33" value="targetMap(WeakMap类型)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-154">
@@ -213,6 +216,27 @@
         </mxCell>
         <mxCell id="T-G6s2uSpHPfjvhsTkFT-153" value="实例化一份" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-151">
           <mxGeometry x="10" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-162" value="" style="group" vertex="1" connectable="0" parent="T-G6s2uSpHPfjvhsTkFT-156">
+          <mxGeometry x="400" y="571.58" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-163" value="target3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-164" value="new Set(effects)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry x="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-165" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="34.33000000000004" as="sourcePoint" />
+            <mxPoint x="130" y="34.33000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-166" value="dep" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry x="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-167" value="不属于特定targetMap的dep" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="T-G6s2uSpHPfjvhsTkFT-162">
+          <mxGeometry x="-20" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="T-G6s2uSpHPfjvhsTkFT-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#000000;" edge="1" parent="1" source="T-G6s2uSpHPfjvhsTkFT-4" target="T-G6s2uSpHPfjvhsTkFT-2">
           <mxGeometry relative="1" as="geometry" />
