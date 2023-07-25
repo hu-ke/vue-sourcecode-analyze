@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2023-07-25T06:29:45.447Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="20.8.16" etag="STta_XwQEax5pEMxraL2" type="github"><diagram name="Page-1" id="0Q7t6ijoDG1jxrJWOxci">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-07-25T06:34:32.290Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="9VDprAY01_bgkr22BJJR" version="20.8.16" type="github">
+  <diagram name="Page-1" id="0Q7t6ijoDG1jxrJWOxci">
+    <mxGraphModel dx="1909" dy="872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="240" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-2" value="&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;div&gt;// 新建一个set集合用来保存effects对象&lt;/div&gt;export const createDep = (effects) =&amp;gt; {&lt;div&gt;&amp;nbsp; &amp;nbsp; const dep = new Set(effects)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return dep&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="240" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-3" value="dep.js" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="210" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="240" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-5" value="effect.js" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-70" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-G6s2uSpHPfjvhsTkFT-6" value="&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;// ReactiveEffect类&lt;/div&gt;&lt;/div&gt;&lt;div data-lake_diagram_content_editor_data=&quot;true&quot;&gt;export class ReactiveEffect {&lt;div&gt;&amp;nbsp; &amp;nbsp; constructor(fn) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this.fn = fn&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; run() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; activeEffect = this&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this.fn()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="250" width="230" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
