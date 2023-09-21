@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="module">
+  <script type="module">
     import { ref } from './ref.js'
     import { effect } from './effect.js'
     const a = ref(1)
@@ -20,25 +20,6 @@
     console.log(calls, dummy)
     a.value = 2
     console.log(calls, dummy)
-// it('should be reactive', () => {
-//     const a = ref(1)
-//     let dummy
-//     let calls = 0
-//     effect(() => {
-//       calls++
-//       dummy = a.value
-//     })
-//     expect(calls).toBe(1)
-//     expect(dummy).toBe(1)
-//     a.value = 2
-//     expect(calls).toBe(2)
-//     expect(dummy).toBe(2)
-//     // same value should not trigger
-//     a.value = 2
-//     expect(calls).toBe(2)
-// })
-
-
-    </script>
+  </script>
 </body>
 </html>
