@@ -28,11 +28,11 @@ const a = ref(1)
 2. 可以给a的value属性赋值（set value），set时会触发所有订阅。
 3. 需要有一个袋子来存放哪些事件订阅了它（dep）。
 #### b. 实现
-[](https://cdn.nlark.com/yuque/0/2023/png/22362293/1695278066974-1169d1b9-aa4c-4301-b5bf-e65f5fc633a5.png)
+![](https://cdn.nlark.com/yuque/0/2023/png/22362293/1695278066974-1169d1b9-aa4c-4301-b5bf-e65f5fc633a5.png)
 ### 2.effect
 #### a. 分析
 调用effect函数做了哪些事？
-```
+```javascript
 effect(() => {
   call++
   dummy = a.value
@@ -46,19 +46,19 @@ console.log(calls, dummy); // 2 2
 3. a.value = 2之后会触发ref.dep里所有的订阅（ReactEffective）。
 #### b. 实现
 ReactiveEffect类：
-```
+```javascript
 export class ReactiveEffect {
-    constructor(fn) {
-        this.fn = fn
-    }
-    run() {
-        activeEffect = this
-        this.fn()
-    }
+  constructor(fn) {
+    this.fn = fn
+  }
+  run() {
+    activeEffect = this
+    this.fn()
+  }
 }
 ```
 effect函数：
-```
+```javascript
 export let activeEffect = null
 
 export function effect(fn) {
@@ -81,24 +81,26 @@ export function triggerEffect(effect) {
 }
 ```
 到此为止，文章开头举的例子已经实现了。
-那么问题来了，如果：ref入参是个对象呢？要求a.value.name = 'abc'时也能triggerEffects。
+那么问题来了，如果：ref入参是个对象呢？要求`a.value.name = 'abc'`时也能`triggerEffects`。
+```javascript
 const a = ref({
   name: 'kk',
   gender: 'male'
 })
-### 3.toReactive
 ```
+### 3.toReactive
+```javascript
 export const toReactive = (value) => {
-    if (typeof value !== 'object') {
-    return value
-    }
-    const target = value
-    const proxy = new Proxy(target, baseHandler)
-    return proxy
+  if (typeof value !== 'object') {
+  return value
+  }
+  const target = value
+  const proxy = new Proxy(target, baseHandler)
+  return proxy
 }
 ```
 baseHandler:
-```
+```javascript
 export  const baseHandlers = {
  set: (target, key, value, receiver) => {
   const result = Reflect.set(target, key, value, receiver)
